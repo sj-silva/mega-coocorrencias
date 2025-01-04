@@ -1,5 +1,3 @@
-I'll create a README.md file that explains this Mega-Sena lottery co-occurrence analysis project.
-
 # Mega-Sena Co-occurrence Analysis
 
 A web application that analyzes co-occurrence patterns in Brazil's Mega-Sena lottery numbers. This tool helps users study historical lottery number patterns by visualizing how frequently numbers appear together across different time periods.
