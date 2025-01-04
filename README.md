@@ -40,7 +40,7 @@ git clone https://github.com/sj-silva/mega-coocorrencias.git
 cd mega-coocorrencias
 ```
 
-3. Open `index.html` in your web browser.
+3.Open the [live page](https://sj-silva.github.io/mega-coocorrencias/) in your web browser.
 
 ## Usage
 
