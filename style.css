@@ -10,10 +10,10 @@ h1 {
 }
 .number-board {
   display: grid;
-  grid-template-columns: repeat(10, 50px);
-  grid-gap: 10px;
-  justify-content: center;
-  margin: 20px auto;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .number {
   width: 50px;

@@ -24,21 +24,20 @@ A web application that analyzes co-occurrence patterns in Brazil's Mega-Sena lot
 - CSS3
 - JavaScript
 - Bootstrap 5.3.3
-- Chart.js
 - Font Awesome 6.0.0-beta3
 
 ## Installation
 
 1. Clone the repository:
 
-```bash
+````bash
 git clone https://github.com/sj-silva/mega-coocorrencias.git
 
 2. Navigate to the project directory:
 
 ```bash
 cd mega-coocorrencias
-```
+````
 
 3. Open the [live page](https://sj-silva.github.io/mega-coocorrencias/) in your web browser.
 
