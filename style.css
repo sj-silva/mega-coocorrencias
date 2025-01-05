@@ -1,3 +1,4 @@
+/* Estilo Geral */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -5,19 +6,33 @@ body {
   padding: 0;
   background-color: #f4f4f9;
 }
+
+/* Cabeçalho */
 h1 {
   color: #333;
 }
+
+/* Board de Números */
 .number-board {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(
+    10,
+    minmax(0, 1fr)
+  ); /* Sempre 10 colunas com ajuste automático */
   gap: 10px;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: calc(100% - 20px); /* Garante que não ultrapasse a tela */
+  margin: 20px auto; /* Centralizado */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow-x: auto; /* Habilita rolagem horizontal */
 }
+
+/* Estilo dos Números */
 .number {
-  width: 50px;
-  height: 50px;
+  width: 100%; /* Ajusta automaticamente para caber nas colunas */
+  aspect-ratio: 1; /* Quadrado */
   background-color: #1e88e5;
   color: white;
   display: flex;
@@ -29,17 +44,40 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
 .number:hover {
   background-color: #1565c0;
 }
 
-/* Estilo para números selecionados */
+/* Números Selecionados */
 .number.selected-number {
   background-color: red;
 }
 
+/* Resultado */
 .result {
   margin-top: 20px;
   font-size: 18px;
   color: #555;
+}
+
+/* Ajuste para Telas Pequenas */
+@media (max-width: 768px) {
+  .number-board {
+    padding: 5px;
+  }
+
+  .number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .number-board {
+    padding: 3px;
+  }
+
+  .number {
+    font-size: 14px;
+  }
 }
