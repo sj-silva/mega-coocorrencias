@@ -15,24 +15,21 @@ h1 {
 /* Board de Números */
 .number-board {
   display: grid;
-  grid-template-columns: repeat(
-    10,
-    minmax(0, 1fr)
-  ); /* Sempre 10 colunas com ajuste automático */
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 10px;
-  max-width: calc(100% - 20px); /* Garante que não ultrapasse a tela */
-  margin: 20px auto; /* Centralizado */
+  max-width: calc(100% - 20px);
+  margin: 20px auto;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 10px;
-  overflow-x: auto; /* Habilita rolagem horizontal */
+  overflow-x: auto;
 }
 
 /* Estilo dos Números */
 .number {
-  width: 100%; /* Ajusta automaticamente para caber nas colunas */
-  aspect-ratio: 1; /* Quadrado */
+  width: 100%;
+  aspect-ratio: 1;
   background-color: #1e88e5;
   color: white;
   display: flex;
@@ -61,6 +58,37 @@ h1 {
   color: #555;
 }
 
+/* Seção de Doação */
+.donation-section {
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.donation-section h2 {
+  color: #333;
+  font-size: 22px;
+}
+
+.donation-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: not-allowed; /* Cursor desabilitado */
+  opacity: 0.7; /* Visual mais suave */
+}
+
+.donation-button:hover {
+  background-color: #28a745;
+  opacity: 1;
+}
 /* Ajuste para Telas Pequenas */
 @media (max-width: 768px) {
   .number-board {
