@@ -12,6 +12,43 @@ h1 {
   color: #333;
 }
 
+/* Navigation Bar */
+.navbar {
+  background-color: #1e88e5;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
 /* Board de Números */
 .number-board {
   display: grid;
