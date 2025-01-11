@@ -229,6 +229,18 @@ function formatDateToPortuguese(dateString) {
   return formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
 }
 
+// event listeners to all donation buttons
+document.querySelectorAll(".donation-button").forEach((button) => {
+  const pixKeyElement = document.querySelector("#pix-key");
+  button.addEventListener("click", () => {
+    console.log(pixKeyElement);
+    pixKeyElement.classList.add("highlight");
+
+    // Remove the highlight after 2 seconds
+    setTimeout(() => pixKeyElement.classList.remove("highlight"), 2000);
+  });
+});
+
 // Handle all Filter's Buttons
 document.querySelectorAll(".filter-button").forEach((button) => {
   button.addEventListener("click", (event) => {
